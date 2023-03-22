@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="head">Registration Form</h2>
+        <form id="registration-form" action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="text" onkeyup="mailValidationHandler()" id="email" name="email" placeholder="Enter your email">
+            <div id="error-email" class="error"></div>
+            
+
+            <label for="password">Password:</label>
+            <input type="password" onkeyup="passwordValidationHandler()" id="password" name="password" placeholder="Enter your password">
+            <div id="error-pass" class="error"></div>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" onkeyup="phoneValidationHandler()" id="phone" name="phone" placeholder="Enter your phone number">
+            <div id="error-phone" class="error"></div>
+
+            <button type="submit" id="submitbtn" value="Submit">Submit</button>
+
+            <div id="success" class="success"></div>
+            <div id="error" class="error"></div>
+        </form>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
